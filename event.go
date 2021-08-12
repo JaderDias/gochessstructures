@@ -1,12 +1,14 @@
 package gochessstructures
 
 type Event struct {
-	Id          int    `json:"id"`
-	Slug        string `json:"slug"`
-	Name        string `json:"name"`
-	ImageUrl    string `json:"imageUrl"`
-	StartAt     string `json:"startAt"`
 	EndAt       string `json:"endAt"`
-	RoundCount  int    `json:"roundCount"`
+	Games       []Game `json:"games"`
+	Id          int    `json:"id"`
+	ImageUrl    string `json:"imageUrl"`
+	Name        string `json:"name"`
 	ProcessStep int
+	RoundCount  int     `json:"roundCount"`
+	Rounds      []Round `json:"rounds"`
+	Slug        string  `json:"slug"`
+	StartAt     string  `json:"startAt"`
 }
