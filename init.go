@@ -1,4 +1,4 @@
-package chessgostructures
+package gochessstructures
 
 type Country struct {
 	Name string `json:"name"`
