@@ -1,19 +1,20 @@
 package gochessstructures
 
 type Game struct {
-	Id          int    `json:"id"`
-	Slug        string `json:"slug"`
-	RoundId     int    `json:"roundId"`
-	Result      string `json:"result"`
-	Table       int    `json:"table"`
+	Black       Player `json:"black"`
 	Board       int    `json:"board"`
 	CurrentFEN  string `json:"currentFEN"`
-	White       Player `json:"white"`
-	Black       Player `json:"black"`
-	TimeControl string `json:"timeControl"`
-	ProcessStep int
-	RoundSlug   string
 	EventSlug   string
-	Moves       []Move `json:"moves"`
 	HalfMoves   int
+	Id          int    `json:"id"`
+	Moves       []Move `json:"moves"`
+	ProcessStep int
+	Result      string `json:"result"`
+	RoundId     int    `json:"roundId"`
+	RoundSlug   string
+	Slug        string `json:"slug"`
+	Table       int    `json:"table"`
+	TimeControl string `json:"timeControl"`
+	URL			string
+	White       Player `json:"white"`
 }
