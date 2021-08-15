@@ -15,4 +15,5 @@ type Game struct {
 	RoundSlug   string
 	EventSlug   string
 	Moves       []Move `json:"moves"`
+	HalfMoves   int
 }
